@@ -81,9 +81,11 @@
   .wave-logo { display: flex; align-items: center; gap: 8px; }
   .wave-logo .logo-mark {
     width: 32px; height: 32px; border-radius: 8px;
-    background: #C97B89; color: #0A0A14;
+    background: #000; color: #C97B89;
     display: flex; align-items: center; justify-content: center; overflow: hidden;
+    box-shadow: 0 0 0 1px rgba(201,123,137,.28);
   }
+  body.light .wave-logo .logo-mark { box-shadow: none; }
   .wave-logo span { color: #fff; font-size: 20px; font-weight: 700; letter-spacing: -.5px; }
   .app-bar-action {
     width: 36px; height: 36px; border-radius: 50%;
@@ -558,10 +560,10 @@
   }
   .login-logo-mark {
     width: 72px; height: 72px; border-radius: 18px;
-    background: #C97B89; color: #0A0A14;
+    background: #000; color: #C97B89;
     display: flex; align-items: center; justify-content: center;
     margin-bottom: 18px; overflow: hidden;
-    box-shadow: 0 16px 48px rgba(201,123,137,.28);
+    box-shadow: 0 0 0 1px rgba(201,123,137,.28), 0 16px 48px rgba(201,123,137,.18);
   }
   .login-app-name { color: #C97B89; line-height: 0; margin-bottom: 6px; }
   .login-tagline { color: #64748B; font-size: 14px; margin-top: 6px; text-align: center; }
@@ -793,7 +795,7 @@
   body.light .login-screen { background: #EFF4FB; }
   body.light .login-bg::before { background: radial-gradient(circle, rgba(14,165,233,.1) 0%, transparent 70%); }
   body.light .login-bg::after { background: radial-gradient(circle, rgba(99,102,241,.08) 0%, transparent 70%); }
-  body.light .login-logo-mark { box-shadow: 0 16px 40px rgba(201,123,137,.35); }
+  body.light .login-logo-mark { box-shadow: 0 16px 40px rgba(0,0,0,.22); }
   body.light .login-app-name { color: #000; }
   body.light .login-tagline { color: #64748B; }
   body.light .form-label { color: #475569; }
